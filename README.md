@@ -69,3 +69,11 @@ while introducing its own approach to educational systems programming and visual
 ## Status
 
 Kelvar is currently under active development.
+
+## contact info
+
+for any queries or reporting bugs please contact me at :
+
+codemasterx449@gmail.com
+       (or)
+rejo.security1409@gmail.com
