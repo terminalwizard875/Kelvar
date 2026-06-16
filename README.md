@@ -31,6 +31,10 @@ for a in range(0,5) {
 }
 ```
 
+## Images
+
+<img width="1365" height="767" alt="image" src="https://github.com/user-attachments/assets/a2d3f0db-670c-4d98-890f-e62ba851466e" />
+
 ## Project Goals
 
 Kelvar aims to make systems programming concepts easier to understand through visual tools, memory inspection, runtime analysis, and a beginner-friendly syntax.
