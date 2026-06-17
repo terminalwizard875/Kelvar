@@ -173,4 +173,4 @@ linux / unix : https://www.python.org/downloads/source/
 mac os : https://www.python.org/downloads/macos/
 android : https://www.python.org/downloads/android/
 
-install git / curl : for windows mac and linux >> https://git-scm.com/install/windows
+## install git / curl : for windows mac and linux >> https://git-scm.com/install/windows
