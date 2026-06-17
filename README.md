@@ -36,7 +36,7 @@ python kelvar_main_entry_point.py
 ## 2. Standalone Build
 
 To compile Kelvar into a standalone Windows .exe application with custom icons:
-# Generate high-resolution neon shield icon and PyInstaller spec
+Generate high-resolution neon shield icon and PyInstaller spec
 python asset_spec_generator.py
 
 # Package application
@@ -100,23 +100,23 @@ draw_circle(150, 125, 40, "yellow")
 draw_line(50, 50, 250, 200, "red")
 
 
-##🗺️ Project Structure
+## 🗺️ Project Structure
 
 Kelvar/
- ├── kelvar_main_entry_point.py  # Main Entry (CLI & IDE orchestrator)
- ├── asset_spec_generator.py     # Canvas generator & PyInstaller Spec writer
- ├── kelvar/                     # Core Interpreter Modules
- │    ├── __init__.py            # Package manifest
- │    ├── lexer.py               # Tokenizer engine
- │    ├── parser.py              # AST builder
- │    ├── ast_nodes.py           # Node structural architecture
- │    ├── interpreter.py         # Memory & Run evaluation engine
- │    ├── environment.py         # Symbol environment lookup table
- │    └── exceptions.py          # Security panic handlers
- └── ide/                        # Graphical User Interface
+ ├── kelvar_main_entry_point.py   Main Entry (CLI & IDE orchestrator)
+ ├── asset_spec_generator.py      Canvas generator & PyInstaller Spec writer
+ ├── kelvar/                      Core Interpreter Modules
+ │    ├── __init__.py             Package manifest
+ │    ├── lexer.py                Tokenizer engine
+ │    ├── parser.py               AST builder
+ │    ├── ast_nodes.py            Node structural architecture
+ │    ├── interpreter.py          Memory & Run evaluation engine
+ │    ├── environment.py          Symbol environment lookup table
+ │    └── exceptions.py           Security panic handlers
+ └── ide/                         Graphical User Interface
       ├── __init__.py
-      ├── kelvar_ide.py          # Multi-panel Tkinter workbench
-      └── assets/                # Visual icons and logos
+      ├── kelvar_ide.py           Multi-panel Tkinter workbench
+      └── assets/                 Visual icons and logos
 
 
 ## Project Goals
@@ -166,3 +166,11 @@ rejo.security1409@gmail.com
 
 Contributions, bug reports, and syntax suggestions are welcome! Feel free to open an issue or submit a pull request.
 
+## If you encounter an error in running the application ide then install python:
+
+windows : https://www.python.org/downloads/windows/
+linux / unix : https://www.python.org/downloads/source/
+mac os : https://www.python.org/downloads/macos/
+android : https://www.python.org/downloads/android/
+
+install git / curl : for windows mac and linux >> https://git-scm.com/install/windows
