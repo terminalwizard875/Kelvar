@@ -33,7 +33,7 @@ cd Kelvar
 python kelvar_main_entry_point.py
 
 
-##2. Standalone Build
+## 2. Standalone Build
 
 To compile Kelvar into a standalone Windows .exe application with custom icons:
 # Generate high-resolution neon shield icon and PyInstaller spec
@@ -42,6 +42,7 @@ python asset_spec_generator.py
 # Package application
 pyinstaller kelvar.spec
 
+//[For file system structure refer after the syntax showcase section]//
 
 Navigate to dist/KelvarCompilerLabs/ and run KelvarCompilerLabs.exe!
 
