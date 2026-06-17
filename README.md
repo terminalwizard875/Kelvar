@@ -20,6 +20,31 @@ Kelvar is an experimental systems and educational programming language built fro
 * Heap and Memory Visualization
 * Runtime Diagnostics
 
+## 1. Installation
+
+Clone the repository and run the entry point script:
+
+# Clone the repository
+git clone [https://github.com/terminalwizard875/Kelvar.git](https://github.com/terminalwizard875/Kelvar.git)
+
+cd Kelvar
+
+# Launch the visual IDE
+python kelvar_main_entry_point.py
+
+
+##2. Standalone Build
+
+To compile Kelvar into a standalone Windows .exe application with custom icons:
+# Generate high-resolution neon shield icon and PyInstaller spec
+python asset_spec_generator.py
+
+# Package application
+pyinstaller kelvar.spec
+
+
+Navigate to dist/KelvarCompilerLabs/ and run KelvarCompilerLabs.exe!
+
 ## Example
 
 ```kelvar
@@ -34,6 +59,64 @@ for a in range(0,5) {
 ## Images
 
 <img width="1365" height="767" alt="image" src="https://github.com/user-attachments/assets/a2d3f0db-670c-4d98-890f-e62ba851466e" />
+
+## 📝 Syntax Showcase
+
+## 1. Pointer Arithmetic & Move Safety (The Shadow Shield)
+// Allocate memory
+let mut p1 = alloc 50
+let mut p2 = p1 // Ownership is transferred (moved) to p2!
+
+// The following line triggers a Security Shield Panic!
+print *p1 
+
+
+## 2. OOP & Overloading
+class Vector2D {
+  fn init(x) {
+    this.x = x
+    this.y = 0
+  }
+  fn init(x, y) {
+    this.x = x
+    this.y = y
+  }
+  fn __add__(other) {
+    return Vector2D(this.x + other.x, this.y + other.y)
+  }
+}
+
+let mut v1 = Vector2D(5, 10)
+let mut v2 = Vector2D(20, 30)
+let mut v3 = v1 + v2
+print v3.x // Outputs: 25
+
+
+## 3. Integrated Graphics Canvas
+draw_clear()
+draw_rect(50, 50, 200, 150, "blue")
+draw_circle(150, 125, 40, "yellow")
+draw_line(50, 50, 250, 200, "red")
+
+
+##🗺️ Project Structure
+
+Kelvar/
+ ├── kelvar_main_entry_point.py  # Main Entry (CLI & IDE orchestrator)
+ ├── asset_spec_generator.py     # Canvas generator & PyInstaller Spec writer
+ ├── kelvar/                     # Core Interpreter Modules
+ │    ├── __init__.py            # Package manifest
+ │    ├── lexer.py               # Tokenizer engine
+ │    ├── parser.py              # AST builder
+ │    ├── ast_nodes.py           # Node structural architecture
+ │    ├── interpreter.py         # Memory & Run evaluation engine
+ │    ├── environment.py         # Symbol environment lookup table
+ │    └── exceptions.py          # Security panic handlers
+ └── ide/                        # Graphical User Interface
+      ├── __init__.py
+      ├── kelvar_ide.py          # Multi-panel Tkinter workbench
+      └── assets/                # Visual icons and logos
+
 
 ## Project Goals
 
@@ -77,3 +160,8 @@ for any queries or reporting bugs please contact me at :
 codemasterx449@gmail.com
        (or)
 rejo.security1409@gmail.com
+
+## 🤝 Contributing
+
+Contributions, bug reports, and syntax suggestions are welcome! Feel free to open an issue or submit a pull request.
+
